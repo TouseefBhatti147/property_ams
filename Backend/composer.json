@@ -10,7 +10,11 @@
         "laravel/breeze": "^1.19",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.3",
-        "laravel/tinker": "^2.7"
+        "laravel/tinker": "^2.7",
+        "laravel/ui": "^4.4",
+        "laravelcollective/html": "^6.4",
+        "spatie/laravel-html": "^3.5",
+        "spatie/laravel-permission": "^6.4"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
