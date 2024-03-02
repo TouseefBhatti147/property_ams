@@ -13,15 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('streets', function (Blueprint $table) {
+        Schema::create('cities', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('project_id');
-            $table->string('block_id', 256);
-            $table->string('street', 256);
-            $table->dateTime('create_date');
-            $table->dateTime('modify_date');
-            $table->integer('sort_order');
-            $table->integer('old_id')->nullable();
+            $table->string('city');
+            $table->unsignedBigInteger('country_id')->nullable();
+            $table->foreign('country_id')->references('id')->on('countries')->onDelete('set null');
+            $table->string('zipcode', 20)->nullable();
+            $table->unsignedBigInteger('old_id')->nullable();
             $table->timestamps();
         });
     }
@@ -33,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('streets');
+        Schema::dropIfExists('cities');
     }
 };

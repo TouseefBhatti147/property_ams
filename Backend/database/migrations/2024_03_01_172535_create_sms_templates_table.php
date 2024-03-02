@@ -13,9 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('city', function (Blueprint $table) {
+        Schema::create('sms_templates', function (Blueprint $table) {
             $table->id();
+            $table->integer('type');
+            $table->unsignedBigInteger('project_id')->nullable();
+            $table->longText('message')->nullable();
+            $table->tinyInteger('status')->default(1);
             $table->timestamps();
+            $table->index('project_id');
         });
     }
 
@@ -26,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('city');
+        Schema::dropIfExists('sms_templates');
     }
 };

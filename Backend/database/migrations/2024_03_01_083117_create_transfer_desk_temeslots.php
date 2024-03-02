@@ -13,8 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('country', function (Blueprint $table) {
-            $table->id();
+        Schema::create('transfer_desk_temeslots', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('sales_center_id');
+            $table->date('date')->nullable();
+            $table->dateTime('dated');
+            $table->tinyInteger('status')->default(1);
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('country');
+        Schema::dropIfExists('transfer_desk_temeslots');
     }
 };
