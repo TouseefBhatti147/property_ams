@@ -1,13 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<link rel="stylesheet" href="{{asset('sb-admin-2.css')}}">
-<link rel="stylesheet" href="{{asset('sb-admin-2.min.css')}}">
-<link
-    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-    rel="stylesheet">
-<link href="fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
 
 <body id="page-top">
 
@@ -2415,50 +2408,11 @@
                 </div>
             </div>
 
-            <!-- Bootstrap core JavaScript-->
-            <script src="{{ asset('jquery/jquery.min.js') }}"></script>
-
-
-            <!-- Core plugin JavaScript-->
-
-            <script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-            <script src="{{ asset('jquery-easing/jquery.easing.min.js') }}"></script>
+  
 
 
 
-            <!-- Core plugin JavaScript-->
-
-            <!-- Custom scripts for all pages-->
-            <script src="{{ asset('js/sb-admin-2.min.js') }}"></script>
-
-            <!-- Page level plugins -->
-
-            <script src="{{ asset('chart.js/Chart.min.js') }}"></script>
-
-            <!-- Page level custom scripts -->
-
-            <script src="{{ asset('js/demo/chart-area-demo.js') }}"></script>
-            <script src="{{ asset('js/demo/chart-pie-demo.js') }}"></script>
-
-            <script>
-            $(document).ready(function() {
-                // When plus icon is clicked
-                $('.fa-plus').click(function() {
-                    // Hide plus icon
-                    $(this).removeClass('d-block').addClass('d-none');
-                    // Show minus icon
-                    $(this).siblings('.fa-minus').removeClass('d-none').addClass('d-block');
-                });
-
-                // When minus icon is clicked
-                $('.fa-minus').click(function() {
-                    // Hide minus icon
-                    $(this).removeClass('d-block').addClass('d-none');
-                    // Show plus icon
-                    $(this).siblings('.fa-plus').removeClass('d-none').addClass('d-block');
-                });
-            });
-            </script>
+  
 
 </body>
 
