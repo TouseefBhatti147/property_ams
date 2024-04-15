@@ -20,6 +20,8 @@ return new class extends Migration
             $table->integer('files_available')->default(0);
             $table->integer('plots_available')->default(0);
             $table->integer('plots_balloted')->default(0);
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

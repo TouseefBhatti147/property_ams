@@ -33,6 +33,8 @@ return new class extends Migration
             $table->decimal('charges_shops', 10)->default(0);
             $table->decimal('charges_villas_joint', 10)->default(0);
             $table->integer('old_id')->nullable();
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

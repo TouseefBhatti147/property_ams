@@ -20,10 +20,11 @@ return new class extends Migration
             $table->mediumText('content')->comment('Text Content');
             $table->integer('ordering')->nullable()->default(1)->comment('Ordering');
             $table->boolean('status')->nullable()->default(true)->comment('Status');
-            $table->dateTime('created_at')->nullable()->useCurrent()->comment('Created Date');
-            $table->dateTime('updated_at')->nullable()->useCurrent()->comment('Updated Date');
+            $table->timestamps(); // Add timestamps
+
 
             $table->unique(['text_id'], 'text_id_UNIQUE');
+
         });
     }
 

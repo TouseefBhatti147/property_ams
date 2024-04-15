@@ -19,6 +19,8 @@ return new class extends Migration
             $table->integer('plot_id')->nullable();
             $table->date('due_date')->nullable();
             $table->integer('amount')->nullable();
+            $table->timestamps(); // Add timestamps
+
 
          
         });

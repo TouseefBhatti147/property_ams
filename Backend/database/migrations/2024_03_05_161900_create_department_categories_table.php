@@ -21,6 +21,8 @@ return new class extends Migration
             $table->integer('child_id_start')->nullable();
             $table->integer('child_id_end')->nullable();
             $table->boolean('is_main')->nullable()->default(false);
+            $table->timestamps(); // Add timestamps
+
 
         
         });

@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('master_plan', 100)->nullable();
             $table->string('key_plan', 100)->nullable();
             $table->text('master_plan_thumb')->nullable();
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

@@ -19,6 +19,8 @@ return new class extends Migration
             $table->decimal('id', 10, 0)->nullable();
             $table->string('name', 80)->nullable();
             $table->integer('block_id');
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

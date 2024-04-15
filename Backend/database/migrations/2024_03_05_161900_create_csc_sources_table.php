@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->integer('ordering')->default(1)->comment('Ordering');
             $table->boolean('status')->default(true)->comment('Status');
+            $table->timestamps(); // Add timestamps
 
             $table->unique(['source_id'], 'source_id_UNIQUE');
         });

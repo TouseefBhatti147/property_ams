@@ -19,7 +19,8 @@ return new class extends Migration
             $table->string('title')->comment('Title');
             $table->integer('ordering')->nullable()->default(1)->comment('Ordering');
             $table->boolean('status')->nullable()->default(true)->comment('Status');
-    
+            $table->timestamps(); // Add timestamps
+
             // No need to specify primary key constraint separately, as increments() already sets it as primary key
         });
     }

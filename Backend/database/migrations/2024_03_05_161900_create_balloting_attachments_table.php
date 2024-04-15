@@ -22,6 +22,8 @@ return new class extends Migration
             $table->integer('sort_order')->default(0);
             $table->integer('status')->default(0);
             $table->text('remarks')->nullable();
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

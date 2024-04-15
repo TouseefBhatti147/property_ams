@@ -20,6 +20,8 @@ return new class extends Migration
             $table->integer('screen_id');
             $table->string('remarks', 2000);
             $table->integer('status');
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

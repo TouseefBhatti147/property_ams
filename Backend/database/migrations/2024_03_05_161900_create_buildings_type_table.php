@@ -17,6 +17,8 @@ return new class extends Migration
             $table->integer('id', true);
             $table->string('building_type');
             $table->integer('status')->nullable()->default(0);
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

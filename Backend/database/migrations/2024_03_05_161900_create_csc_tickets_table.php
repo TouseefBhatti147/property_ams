@@ -43,6 +43,7 @@ return new class extends Migration
             $table->integer('count_verified')->nullable()->default(0);
             $table->integer('count_on_hold')->nullable()->default(0);
             $table->integer('count_closed')->nullable()->default(0);
+            $table->timestamps(); // Add timestamps
 
             $table->unique(['ticket_id'], 'track_id_UNIQUE');
         });

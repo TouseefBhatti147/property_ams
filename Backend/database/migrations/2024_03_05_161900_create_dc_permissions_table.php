@@ -17,6 +17,8 @@ return new class extends Migration
             $table->integer('id', true);
             $table->integer('user_id')->nullable();
             $table->integer('record_type')->nullable();
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

@@ -18,7 +18,8 @@ return new class extends Migration
             $table->string('title')->comment('Title');
             $table->integer('ordering')->nullable()->default(1)->comment('Ordering');
             $table->boolean('status')->nullable()->default(true)->comment('Status');
-    
+            $table->timestamps(); // Add timestamps
+
             // Remove the explicit declaration of primary key
         });
     }

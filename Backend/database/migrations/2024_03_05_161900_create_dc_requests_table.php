@@ -21,6 +21,8 @@ return new class extends Migration
             $table->integer('orig_user_by_id');
             $table->dateTime('orig_user_by_date');
             $table->string('orig_user_by_remarks', 2000);
+            $table->timestamps(); // Add timestamps
+
             // Add more columns...
     
             // No need to explicitly define primary key again

@@ -4,7 +4,11 @@
 <link rel="stylesheet" href="{{asset('sb-admin-2.css')}}">
 <link rel="stylesheet" href="{{asset('sb-admin-2.min.css')}}">
 <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-<link href="fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-w9BRHaaHz17obvsI4kX1Kmrtejtw7Zl0p6NTu9b+8V+oG9/vN7W16s0fTJGcFwtC4N1XJBY9kk0B3O0j+bK62g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/6.0.0/intro.min.js" integrity="sha512-mceGQCYWZuRNu27jG8kIrAWT++MIJ1HUEiXy0BTJNkuJEeislqxEZ1KIyfHNMh2YWYAf3oCumvhFV5VYoFfVlA==" crossorigin="anonymous"></script>
+
+<!-- <link href="fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 

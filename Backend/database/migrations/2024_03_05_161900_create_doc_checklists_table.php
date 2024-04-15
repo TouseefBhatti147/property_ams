@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('title', 1000)->nullable();
             $table->integer('status')->default(0);
             $table->integer('sort_order')->default(0);
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

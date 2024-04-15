@@ -31,6 +31,8 @@ return new class extends Migration
         $table->string('confirmations_amount')->nullable()->default('0');
         $table->string('confirmations_amount_received_cum')->nullable()->default('0');
         $table->string('confirmed_regulars_cum')->nullable()->default('0');
+        $table->timestamps(); // Add timestamps
+
     });
 }
 

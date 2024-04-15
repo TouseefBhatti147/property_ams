@@ -23,6 +23,7 @@ return new class extends Migration
             $table->boolean('status')->nullable()->default(true);
             $table->dateTime('created_at')->nullable()->useCurrent();
             $table->dateTime('updated_at')->nullable()->useCurrent();
+            $table->timestamps(); // Add timestamps
 
            
         });

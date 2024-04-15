@@ -88,6 +88,8 @@ return new class extends Migration
             $table->integer('plan_id')->nullable()->default(0);
             $table->integer('prev_tag1_id')->nullable()->default(0);
             $table->boolean('ac_slip_mode')->nullable()->default(false);
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

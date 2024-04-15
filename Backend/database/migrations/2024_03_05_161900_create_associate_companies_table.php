@@ -22,6 +22,8 @@ return new class extends Migration
             $table->string('reg_no', 30)->nullable();
             $table->string('company_desc1', 200)->nullable();
             $table->string('company_desc2', 200)->nullable();
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

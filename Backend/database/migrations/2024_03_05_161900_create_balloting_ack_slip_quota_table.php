@@ -21,6 +21,8 @@ return new class extends Migration
             $table->integer('slips_allowed')->default(0);
             $table->integer('balloting_id')->default(0);
             $table->integer('special_qty')->default(0);
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

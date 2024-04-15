@@ -26,6 +26,8 @@ return new class extends Migration
             $table->dateTime('updated_at')->nullable()->useCurrent()->comment('Updated Date');
 
             $table->unique(['query_id'], 'query_id_UNIQUE');
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

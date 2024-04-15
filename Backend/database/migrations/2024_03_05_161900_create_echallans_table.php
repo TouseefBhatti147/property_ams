@@ -24,6 +24,8 @@ return new class extends Migration
             $table->integer('bank_id')->nullable();
             $table->bigInteger('gen_challan_id')->nullable()->default(0)->index('gen_challan_id');
             $table->integer('user_id')->nullable()->default(0);
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

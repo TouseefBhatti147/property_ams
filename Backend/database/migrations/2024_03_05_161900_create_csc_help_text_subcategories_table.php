@@ -28,6 +28,8 @@ return new class extends Migration
     
             // Unique constraint
             $table->unique('subcategory_id', 'subcategory_id_UNIQUE');
+            $table->timestamps(); // Add timestamps
+
         });
     }
     

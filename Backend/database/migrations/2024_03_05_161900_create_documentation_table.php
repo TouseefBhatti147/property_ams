@@ -30,8 +30,8 @@ return new class extends Migration
             $table->boolean('status')->nullable()->default(true)->comment('1=Active
 2=Deprecated
 3=Trashed');
-            $table->dateTime('created_at')->nullable()->useCurrent();
-            $table->dateTime('updated_at')->nullable()->useCurrent();
+$table->timestamps(); // Add timestamps
+
         });
     }
 

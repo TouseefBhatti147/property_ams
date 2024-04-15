@@ -51,6 +51,8 @@ return new class extends Migration
             $table->integer('temp_ballot_id')->default(0);
 
             $table->index(['slip_id'], 'slip_id');
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

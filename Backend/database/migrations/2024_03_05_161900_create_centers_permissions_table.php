@@ -18,6 +18,8 @@ return new class extends Migration
             $table->integer('user_id')->nullable();
             $table->integer('center_id')->nullable();
             $table->integer('old_id')->nullable();
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

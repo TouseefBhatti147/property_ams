@@ -48,6 +48,8 @@ return new class extends Migration
             $table->integer('old_id')->nullable();
             $table->string('plot_selection_notice', 100)->nullable();
             $table->string('plot_selection_user_guide', 100)->nullable();
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

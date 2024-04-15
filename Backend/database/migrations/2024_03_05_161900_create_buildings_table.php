@@ -27,6 +27,8 @@ return new class extends Migration
             $table->decimal('covered_parking_percent', 10)->default(0);
             $table->integer('is_associate')->default(0);
             $table->integer('old_id')->nullable();
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

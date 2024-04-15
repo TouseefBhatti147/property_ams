@@ -13,12 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('appointment_hours', function (Blueprint $table) {
-            $table->integer('id', true);
-            $table->string('hour', 100);
-            $table->boolean('status')->default(true);
-            $table->timestamps(); // Add timestamps
-
+        Schema::create('countries', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
         });
     }
 
@@ -29,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('appointment_hours');
+        Schema::dropIfExists('countries');
     }
 };

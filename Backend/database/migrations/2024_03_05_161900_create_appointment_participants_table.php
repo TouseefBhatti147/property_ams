@@ -21,6 +21,8 @@ class CreateAppointmentParticipantsTable extends Migration
             $table->string('email', 300);
             // Define a foreign key constraint
             $table->foreign('appointment_id')->references('id')->on('appointments')->onDelete('cascade');
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

@@ -39,6 +39,8 @@ return new class extends Migration
             $table->longText('comments')->nullable();
             $table->dateTime('created_at')->nullable()->useCurrent();
             $table->dateTime('updated_at')->nullable()->useCurrent();
+            $table->timestamps(); // Add timestamps
+
         });
     }
     

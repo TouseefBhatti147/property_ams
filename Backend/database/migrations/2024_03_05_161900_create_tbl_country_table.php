@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('tbl_country', function (Blueprint $table) {
             $table->integer('id', true)->unique('id');
-            $table->string('country');
+            $table->string('country')->default('')->change();
             $table->string('nicename')->nullable();
             $table->string('iso3', 3)->nullable();
             $table->integer('calling_code')->nullable();
@@ -27,6 +27,8 @@ return new class extends Migration
             $table->integer('sms_status')->default(1);
             $table->boolean('is_dispatchable')->nullable()->default(false);
             $table->integer('old_id')->nullable();
+            $table->timestamps(); 
+
 
           
         });

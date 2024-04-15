@@ -29,8 +29,8 @@ return new class extends Migration
             $table->date('attachment_2_date')->nullable();
             $table->date('attachment_3_date')->nullable();
             $table->boolean('status')->nullable()->default(true)->comment('Status');
-            $table->integer('updated_by')->nullable()->comment('Updated By');
-            $table->dateTime('updated_at')->nullable()->useCurrent()->comment('Updated Date');
+            $table->timestamps(); // Add timestamps
+
         });
     }
     

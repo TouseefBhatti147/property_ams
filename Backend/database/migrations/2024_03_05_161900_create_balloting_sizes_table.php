@@ -18,6 +18,8 @@ return new class extends Migration
             $table->integer('balloting_id');
             $table->integer('size_id')->default(0);
             $table->decimal('payment_percent', 10, 0)->default(0);
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

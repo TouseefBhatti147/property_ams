@@ -113,8 +113,7 @@
                             </h6>
                             <a class="dropdown-item d-flex align-items-center" href="#">
                                 <div class="dropdown-list-image mr-3">
-                                    <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                        alt="...">
+                                <img class="rounded-circle" src="{{ asset('img/undraw_profile_1.svg') }}" alt="yuiyui">
                                     <div class="status-indicator bg-success"></div>
                                 </div>
                                 <div class="font-weight-bold">
@@ -125,7 +124,7 @@
                             </a>
                             <a class="dropdown-item d-flex align-items-center" href="#">
                                 <div class="dropdown-list-image mr-3">
-                                <img class="rounded-circle" src="{{ asset('public/undraw_profile_2.svg') }}" alt="Example Image">
+                                <img class="rounded-circle" src="{{ asset('img/undraw_profile_2.svg') }}" alt="yuiyui">
 
                                     
                                         alt="...">
@@ -139,7 +138,9 @@
                             </a>
                             <a class="dropdown-item d-flex align-items-center" href="#">
                                 <div class="dropdown-list-image mr-3">
-                                <img class="rounded-circle" src="{{ asset('public/undraw_profile_3.svg') }}" alt="yuiyui">
+                              
+                                <img class="rounded-circle" src="{{ asset('img/undraw_profile_3.svg') }}" alt="yuiyui">
+
                                
                                         alt="...">
                                     <div class="status-indicator bg-warning"></div>
@@ -174,8 +175,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="mr-2 d-none d-lg-inline text-gray-600 small">Welcome {{ $firstname }}</span>
-                            <img class="img-profile rounded-circle"
-                                src="img/undraw_profile.svg">
+                            <img class="rounded-circle" src="{{ asset('img/undraw_profile_3.svg') }}" alt="yuiyui">
                         </a>
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

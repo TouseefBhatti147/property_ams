@@ -34,6 +34,8 @@ return new class extends Migration
             $table->dateTime('created_at')->nullable()->useCurrent();
             $table->dateTime('updated_at')->nullable()->useCurrent();
             $table->longText('history')->nullable();
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

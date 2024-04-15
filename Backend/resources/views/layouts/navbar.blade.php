@@ -8,7 +8,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
             </div>
@@ -20,7 +20,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="#">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span></a>
         </li>
@@ -191,14 +191,22 @@
             </a>
             <div id="supportbar" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Login Screens:</h6>
-                    <a class="collapse-item" href="login.html">Login</a>
-                    <a class="collapse-item" href="register.html">Register</a>
-                    <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                    <div class="collapse-divider"></div>
-                    <h6 class="collapse-header">Other Pages:</h6>
-                    <a class="collapse-item" href="404.html">404 Page</a>
-                    <a class="collapse-item" href="blank.html">Blank Page</a>
+                    <h6 class="collapse-header">Pending Support Ticket</h6>
+                    <a class="collapse-item" href="login.html">Member Service</a>
+                    <h6 class="collapse-header">Customer Support Ticket</h6>
+                    <a class="collapse-item" href="forgot-password.html">Tickets(Non-Payments)</a>
+                    <h6 class="collapse-header">Tickets All</h6>
+                    <a class="collapse-item" href="404.html">Add New Tickets</a>
+                    <a class="collapse-item" href="blank.html">Summary Reports</a>
+                    <h6 class="collapse-header">Payment Evidence Tickets</h6>
+                    <a class="collapse-item" href="blank.html">Ticket (Listing)</a>
+                    <a class="collapse-item" href="blank.html">All Tickets (Listing)</a>
+                    <a class="collapse-item" href="blank.html">Add New Ticket</a>
+                        
+                    <a class="collapse-item" href="blank.html">Payment Evidence(Unsorted)</a>
+                    <a class="collapse-item" href="blank.html">Summary Report</a>
+   
+                    <a class="collapse-item" href="blank.html">Edit Requests</a>
                 </div>
             </div>
         </li>
@@ -210,14 +218,10 @@
             </a>
             <div id="recordfilebar" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Login Screens:</h6>
-                    <a class="collapse-item" href="login.html">Login</a>
-                    <a class="collapse-item" href="register.html">Register</a>
-                    <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                    <div class="collapse-divider"></div>
-                    <h6 class="collapse-header">Other Pages:</h6>
-                    <a class="collapse-item" href="404.html">404 Page</a>
-                    <a class="collapse-item" href="blank.html">Blank Page</a>
+                    
+                    <a class="collapse-item" href="login.html">Record Rooms</a>
+                    <a class="collapse-item" href="register.html">Receipts Filling</a>
+                    
                 </div>
             </div>
         </li>
@@ -229,14 +233,16 @@
             </a>
             <div id="ballotingbar" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Login Screens:</h6>
-                    <a class="collapse-item" href="login.html">Login</a>
-                    <a class="collapse-item" href="register.html">Register</a>
-                    <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                    <h6 class="collapse-header">Pre Balloting</h6>
+                    <a class="collapse-item" href="login.html">Balloting Types</a>
+                    <a class="collapse-item" href="register.html">Ack Slip(Listing)</a>
+                    <a class="collapse-item" href="forgot-password.html">Ack Slip(Summary Report)</a>
                     <div class="collapse-divider"></div>
-                    <h6 class="collapse-header">Other Pages:</h6>
-                    <a class="collapse-item" href="404.html">404 Page</a>
-                    <a class="collapse-item" href="blank.html">Blank Page</a>
+                    <h6 class="collapse-header">Balloting</h6>
+                    <a class="collapse-item" href="forgot-password.html">Ballotable</a>
+                    <a class="collapse-item" href="404.html">Initialize Balloting</a>
+                    <h6 class="collapse-header">Post Balloting</h6>
+                    <a class="collapse-item" href="404.html">Balloting Result</a>
                 </div>
             </div>
         </li>
@@ -248,14 +254,11 @@
             </a>
             <div id="configbar" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Login Screens:</h6>
-                    <a class="collapse-item" href="login.html">Login</a>
-                    <a class="collapse-item" href="register.html">Register</a>
-                    <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                    <div class="collapse-divider"></div>
-                    <h6 class="collapse-header">Other Pages:</h6>
-                    <a class="collapse-item" href="404.html">404 Page</a>
-                    <a class="collapse-item" href="blank.html">Blank Page</a>
+                
+                    <a class="collapse-item" href="login.html">AMS Documentation</a>
+                    <a class="collapse-item" href="register.html">Property</a>
+                    <a class="collapse-item" href="forgot-password.html">General</a>
+                    <a class="collapse-item" href="404.html">Finnce</a>
                 </div>
             </div>
         </li>
@@ -267,14 +270,10 @@
             </a>
             <div id="usersbar" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Login Screens:</h6>
-                    <a class="collapse-item" href="login.html">Login</a>
-                    <a class="collapse-item" href="register.html">Register</a>
-                    <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                    <div class="collapse-divider"></div>
-                    <h6 class="collapse-header">Other Pages:</h6>
-                    <a class="collapse-item" href="404.html">404 Page</a>
-                    <a class="collapse-item" href="blank.html">Blank Page</a>
+                    <a class="collapse-item" href="login.html">User Listing</a>
+                    <a class="collapse-item" href="register.html">New Account(Requests)</a>
+                    <a class="collapse-item" href="forgot-password.html">My Subordinates</a>
+                    
                 </div>
             </div>
         </li>
@@ -286,14 +285,11 @@
             </a>
             <div id="securitybar" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Login Screens:</h6>
-                    <a class="collapse-item" href="login.html">Login</a>
-                    <a class="collapse-item" href="register.html">Register</a>
-                    <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                    <div class="collapse-divider"></div>
-                    <h6 class="collapse-header">Other Pages:</h6>
-                    <a class="collapse-item" href="404.html">404 Page</a>
-                    <a class="collapse-item" href="blank.html">Blank Page</a>
+                   
+                    <a class="collapse-item" href="login.html">Security Dashboard</a>
+                    <a class="collapse-item" href="register.html">Device Request</a>
+                    <a class="collapse-item" href="forgot-password.html">IP Info Check</a>
+                    
                 </div>
             </div>
         </li>

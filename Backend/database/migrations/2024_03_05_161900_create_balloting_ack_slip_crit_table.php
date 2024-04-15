@@ -34,6 +34,8 @@ return new class extends Migration
             $table->decimal('precent_req_for_allocation', 10, 0)->default(0);
             $table->decimal('payable_amount', 10, 0)->default(0);
             $table->decimal('paid_upto_cutoff_date', 10)->default(0);
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

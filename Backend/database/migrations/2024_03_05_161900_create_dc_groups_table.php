@@ -50,6 +50,8 @@ return new class extends Migration
             $table->string('audit_ver_role_status_title', 100);
             $table->integer('reserved_status_id');
             $table->string('reserved_status_title', 200);
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

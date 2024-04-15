@@ -64,8 +64,8 @@ return new class extends Migration
         $table->boolean('printed_after_posting')->nullable()->default(false);
         $table->integer('status')->nullable()->default(1)->comment('Status');
         $table->integer('last_status')->nullable();
-        $table->dateTime('created_at')->nullable()->useCurrent()->comment('Created Date');
-        $table->dateTime('updated_at')->nullable()->useCurrent()->comment('Updated Date');
+        $table->timestamps(); // Add timestamps
+
 
         // No need to specify primary key constraint separately, as increments() already sets it as primary key
     });

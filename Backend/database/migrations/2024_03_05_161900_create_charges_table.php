@@ -25,6 +25,8 @@ return new class extends Migration
             $table->integer('external_id')->default(0);
             $table->tinyInteger('shift_on_transfer')->default(0);
             $table->integer('old_id')->nullable();
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

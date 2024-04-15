@@ -19,6 +19,8 @@ return new class extends Migration
             $table->integer('balloting_id');
             $table->integer('type');
             $table->integer('remarks');
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

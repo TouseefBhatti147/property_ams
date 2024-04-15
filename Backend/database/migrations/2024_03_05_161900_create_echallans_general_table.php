@@ -26,6 +26,8 @@ return new class extends Migration
             $table->integer('user_id')->nullable();
             $table->dateTime('updated_on')->nullable();
             $table->integer('project_id')->nullable()->default(0);
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

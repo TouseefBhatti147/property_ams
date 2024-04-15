@@ -20,6 +20,8 @@ return new class extends Migration
             $table->integer('no_of_files')->default(0);
             $table->integer('no_of_plots')->default(0);
             $table->string('attachment', 100)->nullable();
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

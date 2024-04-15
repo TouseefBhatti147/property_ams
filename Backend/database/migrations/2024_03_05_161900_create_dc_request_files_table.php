@@ -17,6 +17,8 @@ return new class extends Migration
             $table->bigInteger('request_file_id', true);
             $table->bigInteger('request_id');
             $table->integer('file_id')->comment('id from plots table');
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

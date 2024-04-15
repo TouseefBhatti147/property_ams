@@ -68,6 +68,8 @@ return new class extends Migration
             $table->text('prev_location')->nullable();
 
             $table->unique(['result_id'], 'result_id_UNIQUE');
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

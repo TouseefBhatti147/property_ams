@@ -21,6 +21,8 @@ return new class extends Migration
             $table->decimal('unsold_pl_charges', 10)->default(0);
             $table->decimal('unsold_dev_charges', 10)->default(0);
             $table->decimal('current_dev_charges', 10)->default(0);
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

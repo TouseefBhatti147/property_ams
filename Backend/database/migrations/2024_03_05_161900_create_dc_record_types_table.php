@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('dc_record_types', function (Blueprint $table) {
             $table->integer('type_id')->primary();
             $table->string('title', 100);
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

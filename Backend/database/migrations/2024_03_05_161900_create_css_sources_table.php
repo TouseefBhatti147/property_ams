@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('title');
             $table->integer('ordering')->default(1);
             $table->boolean('status')->default(true);
+            $table->timestamps(); // Add timestamps
+
         });
     }
 

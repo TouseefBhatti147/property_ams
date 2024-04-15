@@ -22,6 +22,8 @@ return new class extends Migration
             $table->integer('quantity')->default(0);
             $table->unsignedTinyInteger('is_present')->nullable()->default(1);
             $table->unsignedInteger('short')->nullable()->default(0);
+            $table->timestamps(); // Add timestamps
+
         });
     }
     

@@ -16,7 +16,30 @@ require __DIR__.'/auth.php';
 //////////////End:User Routes/////////////////////////
 //////////////Start:General Routes////////////////////
 Route::get('/general', [GeneralController::class, 'index'])->name('general.index');
-//Route::get('/general', function () { return view('index');})->name('general.index');
+Route::get('/general/country-list',[GeneralController::class,'country_list'])->name('general.country-list');
+Route::get('/general/{country}/edit', [CountryController::class, 'edit'])->name('general.edit');
+
+
+
+
+/* 
+/ Routes for updating and deleting countries
+Route::put('/countries/{country}', [CountryController::class, 'update'])->name('countries.update');
+Route::delete('/countries/{country}', [CountryController::class, 'destroy'])->name('countries.destroy');
+
+ */
+
+
+
+
+
+Route::get('/general/country', [GeneralController::class,'create_country'])->name('general.create-country');
+
+Route::get('/general/create-country', [GeneralController::class,'create_country'])->name('general.create-country');
+Route::post('/general/store', [GeneralController::class,'store'])->name('general.store');
+
+Route::get('/country/{id}/edit-country',[GeneralController::class,'edit_country'])->name('general.edit-country');
+Route::put('/country/{id}/update', 'GeneralController@update_country')->name('general.update-country');
 
 
 //////////////End:General Routes//////////////////////

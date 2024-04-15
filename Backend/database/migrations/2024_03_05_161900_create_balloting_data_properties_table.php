@@ -30,6 +30,8 @@ return new class extends Migration
         $table->string('plot_no', 100)->nullable();
         $table->integer('street_id')->nullable()->default(0);
         $table->integer('project_id')->nullable();
+        $table->timestamps(); // Add timestamps
+
     });
 }
 

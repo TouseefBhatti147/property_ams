@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('title');
             $table->string('url')->nullable();
             $table->boolean('status')->nullable();
+            $table->timestamps(); // Add timestamps
+
 
            
         });
