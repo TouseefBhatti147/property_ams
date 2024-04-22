@@ -28,7 +28,7 @@
                         <ul class="breadcrumb">
                             <li>
                                 <i class="ace-icon fa fa-home home-icon"></i>
-                                <a class="ajaxlink" href="{{ route('general.create-country') }}">Home</a>
+                                <a class="ajaxlink" href="{{ route('general.city.create-city') }}">Home</a>
                             </li>&nbsp;
                             <li>
                                 <i class="ace-icon fa fa-angle-right"></i> 
@@ -38,7 +38,7 @@
                             <li>
                                 <i class="ace-icon fa fa-angle-right"></i> 
                                 <!-- ">" sign with space -->
-                                <a class="ajaxlink" href="{{ route('general.country-list') }}">Countries</a>
+                                <a class="ajaxlink" href="{{ route('general.city.city-list') }}">Cities</a>
                             </li>&nbsp;
                             
                         </ul>
@@ -48,9 +48,9 @@
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Countries List</h6>
+        <h6 class="m-0 font-weight-bold text-primary">Cities List</h6>
         <div class="text-right">
-                            <a href="{{ route('general.create-country') }}" class="btn btn-primary">Add New Country</a>
+                            <a href="{{ route('general.city.create-city') }}" class="btn btn-primary">Add New City</a>
                         </div>        
     </div>
     <div class="card-body">
@@ -59,25 +59,27 @@
 </div><div class="col-sm-12 col-md-6"><div id="dataTable_filter" class="dataTables_filter"></div></div></div><div class="row"><div class="col-sm-12">
                     <table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
                 <thead>
-                    <tr role="row"><th class="sorting sorting_asc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 65px;">ISO#</th><th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 450px;">Country Name</th><th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 220px;">Calling Code</th><th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 220px;">SMS Status</th>
-                    <th class="sorting" tabindex="0" aria-controls="dataTable"  colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 150px;">Is Dispatchable</th><th  style="width: 200px;" rowspan="1" colspan="1">Status</th><th style="width: 200px;" rowspan="1" colspan="1">Action</th></tr>
+                    <tr role="row"><th class="sorting sorting_asc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 65px;">City Name</th><th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 450px;">Country Name</th><th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 220px;">Zip Code</th>
+                    <th style="width: 200px;" rowspan="1" colspan="1">Action</th></tr>
                 </thead>
                 <tfoot>
-                    <tr><th rowspan="1" colspan="1">ISO#</th><th rowspan="1" colspan="1">Country</th><th rowspan="1" colspan="1">Calling Code</th><th rowspan="1" colspan="1">SMS Status</th><th rowspan="1" colspan="1">Is Despatchable</th><th rowspan="1" colspan="1">Status</th><th>Action</th></tr>
+                    <tr><th rowspan="1" colspan="1">City Name</th><th rowspan="1" colspan="1">Country</th><th rowspan="1" colspan="1">Zip Code</th><th>Action</th></tr>
                 </tfoot>
                 <tbody>
-                @foreach($countries as $country)
+                @foreach($cities as $city)
                 <tr>
-                    <td>{{ $country->iso }}</td>
-                    <td>{{ $country->country }}</td>
-                    <td>{{ $country->calling_code }}</td>
-                    <td>{{ $country->sms_status }}</td>
-                    <td>{{ $country->is_dispatchable }}</td>
-                    <td>{{ $country->is_active }}</td>
-                  
 
-        <td><a href="{{ route('general.edit-country', ['id' => $country->id]) }}"><i class="fas fa-fw fa-wrench" aria-hidden="true"></i></a>
-       | <form action="{{ route('general.edit-country', ['id' => $country->id]) }}" method="POST" style="display: inline;">
+                    <td>{{ $city->city }}</td>
+                    <td>
+                    {{ $city->country ? $city->country->country : 'Unknown Country' }}
+                   </td>
+                    <td>{{ $city->zipcode }}</td>   
+
+        <td><a href="{{ route('general.city.edit-city', ['id' => $city->id]) }}"><i class="fas fa-fw fa-wrench" aria-hidden="true"></i></a>
+       | <form action="{{ route('general.city.destroy-city', ['city' => $city->id]) }}" method="POST" style="display: inline;">
+
+         
+
     @csrf
     @method('DELETE')
     <button type="submit"><i class="fas fa-fw fa-trash" aria-hidden="true"></i></button>

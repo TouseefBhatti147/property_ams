@@ -1,6 +1,10 @@
 <?php
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\GeneralController;
+use App\Http\Controllers\CountryController;
+
+use App\Http\Controllers\CityController;
+
 use Illuminate\Support\Facades\Route;
 //////////////Start:User Routes/////////////////////////
 Route::middleware(['auth', 'verified'])->group(function () {
@@ -16,30 +20,21 @@ require __DIR__.'/auth.php';
 //////////////End:User Routes/////////////////////////
 //////////////Start:General Routes////////////////////
 Route::get('/general', [GeneralController::class, 'index'])->name('general.index');
-Route::get('/general/country-list',[GeneralController::class,'country_list'])->name('general.country-list');
-Route::get('/general/{country}/edit', [CountryController::class, 'edit'])->name('general.edit');
 
-
-
-
-/* 
-/ Routes for updating and deleting countries
-Route::put('/countries/{country}', [CountryController::class, 'update'])->name('countries.update');
-Route::delete('/countries/{country}', [CountryController::class, 'destroy'])->name('countries.destroy');
-
- */
-
-
-
-
-
-Route::get('/general/country', [GeneralController::class,'create_country'])->name('general.create-country');
-
-Route::get('/general/create-country', [GeneralController::class,'create_country'])->name('general.create-country');
-Route::post('/general/store', [GeneralController::class,'store'])->name('general.store');
-
-Route::get('/country/{id}/edit-country',[GeneralController::class,'edit_country'])->name('general.edit-country');
-Route::put('/country/{id}/update', 'GeneralController@update_country')->name('general.update-country');
-
-
+////////////////////////STRT:Country///////////////
+Route::get('/general/country/country-list',[CountryController::class,'country_list'])->name('general.country.country-list');
+Route::get('/general/country/create-country', [CountryController::class,'create_country'])->name('general.country.create-country');
+Route::post('/general/country/store-country', [CountryController::class,'store_country'])->name('general.country.store-country');
+Route::delete('/general/country-destroy/{country}', [CountryController::class, 'destroy_country'])->name('general.country.destroy-country');
+Route::get('/country/{id}/edit-country', [CountryController::class, 'edit_country'])->name('general.country.edit-country');
+Route::put('/general/update-country/{country}', [CountryController::class, 'update_country'])->name('general.country.update-country');
+//////////////////////END:Country///////////////////
+////////////////////////STRT:City///////////////
+Route::get('/general/city/city-list',[CityController::class,'city_list'])->name('general.city.city-list');
+Route::get('/general/city/create-city', [CityController::class,'create_city'])->name('general.city.create-city');
+Route::post('/general/city/store-city', [CityController::class,'store_city'])->name('general.city.store-city');
+Route::delete('/general/city-destroy/{city}', [CityController::class, 'destroy_city'])->name('general.city.destroy-city');
+Route::get('/city/{id}/edit-city', [CityController::class, 'edit_city'])->name('general.city.edit-city');
+Route::put('/general/update-city/{city}', [CityController::class, 'update_city'])->name('general.city.update-city');
+//////////////////////END:City///////////////////
 //////////////End:General Routes//////////////////////

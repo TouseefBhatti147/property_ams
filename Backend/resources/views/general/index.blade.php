@@ -33,7 +33,7 @@
                                     </div>
                                     <div class="text-center mt-3">
                                         <div class="text-sm font-weight-bold text-primary text-uppercase mb-1">
-                                        <a href="{{ route('general.country-list') }}">Countries</a>
+                                        <a href="{{ route('general.country.country-list') }}">Countries</a>
    
                                         </div>
                                     </div>
@@ -48,7 +48,7 @@
                                     </div>
                                     <div class="text-center mt-3">
                                         <div class="text-sm font-weight-bold text-primary text-uppercase mb-1">
-                                            Cities
+                                        <a href="{{ route('general.city.city-list') }}"> Cities</a>
                                         </div>
                                     </div>
                                 </div>
